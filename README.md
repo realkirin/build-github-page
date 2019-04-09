@@ -19,12 +19,17 @@ https://help.github.com/en/articles/changing-a-remotes-url
 # git push -u origin master
 
 
-origin只是一個別名
+# -u
+# origin只是一個別名
 
 
 產生ssh key
-ssh-keygen -t rsa -C "your_email@example.com"
-會在 ~/.ssh/ 下產生 id_rsa 及 id_rsa.pub(公鑰 貼到github setting)
+# ssh-keygen -t rsa -C "your_email@example.com"
+# 會在 ~/.ssh/ 下產生 id_rsa 及 id_rsa.pub(公鑰 貼到github setting)
 
-ssh-agent -s
-ssh-add ~/.ssh/id_rsa
+# ssh-agent -s
+# ssh-add ~/.ssh/id_rsa
+
+
+測試連線
+# ssh -T git@github.com
